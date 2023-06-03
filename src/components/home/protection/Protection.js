@@ -19,7 +19,7 @@ export default function Protection() {
           <div className="tbl-competitors">Competitors</div>
         </div>
         {data.map((item, index) => (
-          <div className="table-block">
+          <div className="table-block" key={index}>
             <div className={item.desc ? "tbl-title" : "tbl-title2"}>
               {item.title}
             </div>

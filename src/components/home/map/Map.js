@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import "./map.css";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 
-const api = "AIzaSyCZQdWZWsNyakL30EbvVherjO4c9HcqFc8";
+const api = "AIzaSyDQBG53Xpm5IESjXjkkkpt3MF4sjdnakC4";
 
 export default function Map() {
   const { isLoaded } = useLoadScript({

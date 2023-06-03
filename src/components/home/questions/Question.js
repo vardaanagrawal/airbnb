@@ -15,7 +15,7 @@ export default function Question() {
         </div>
         <div className="right">
           {data.map((item, index) => (
-            <div className="ques-box">
+            <div className="ques-box" key={index}>
               <div
                 className="ques-row"
                 onClick={() => {

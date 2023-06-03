@@ -11,7 +11,9 @@ export default function Footer() {
             <div className="block-head">{item.title}</div>
             <div className="subitem-block">
               {item.items.map((subitem, index) => (
-                <div className="block-content">{subitem}</div>
+                <div className="block-content" key={index}>
+                  {subitem}
+                </div>
               ))}
             </div>
           </div>
