@@ -2,11 +2,9 @@ import React, { useMemo, useState } from "react";
 import "./map.css";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 
-const api = "AIzaSyDQBG53Xpm5IESjXjkkkpt3MF4sjdnakC4";
-
 export default function Map() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: api,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API,
   });
 
   const [data, setData] = useState(15);
@@ -43,7 +41,7 @@ export default function Map() {
             center={center}
           ></GoogleMap>
         ) : (
-          "Loading"
+          ""
         )}
       </div>
     </div>
