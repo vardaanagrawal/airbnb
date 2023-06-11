@@ -3,12 +3,12 @@ import Setup from "./setup/Setup";
 import Protection from "./protection/Protection";
 import Footer from "./footer/Footer";
 import Question from "./questions/Question";
-import Map from "./map/Map";
+// import Map from "./map/Map";
 
 export default function Home() {
   return (
     <div className="home">
-      <Map />
+      {/* <Map /> */}
       <Setup />
       <Protection />
       <Question />
